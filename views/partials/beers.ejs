@@ -1,6 +1,6 @@
     <div>
         <% beer.forEach(beer => { %>
-            <a href="/beers/beer-<%- beer.id %>"><%- beer.name %></a><br>
+            <a href="/beers/<%- beer.id %>"><%- beer.name %></a><br>
             <img src="<%- beer.image_url %>" alt="Picture of Beer" style="height: 70px"><br>
             <%- beer.description %><br>
             <%- beer.tagline %><br><br>
