@@ -1,8 +1,12 @@
-    <div>
-        <% beer.forEach(beer => { %>
-            <a href="/beers/<%- beer.id %>"><%- beer.name %></a><br>
-            <img src="<%- beer.image_url %>" alt="Picture of Beer" style="height: 70px"><br>
-            <%- beer.description %><br>
-            <%- beer.tagline %><br><br>
-        <%}); %>
-    </div>
+<div class="beers">
+<% beer.forEach(beer => { %>
+<div class="description">
+  <div><img src="<%- beer.image_url %>" alt="Picture of Beer" style="height: 70px"></div>
+  <div>
+    <h2><a href="/beers/<%- beer.id %>"><%- beer.name %></a></h2>
+  </div>
+  <div><%- beer.description %></div>
+  <div><%- beer.tagline %></div>
+</div>
+<%}); %>
+</div>
